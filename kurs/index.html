@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APLIKASI KURS MATA UANG</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="img/logo.png" alt="logo.png">
+            <h2>T-Money</h2>
+        </div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Payout</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <form action="">
+            <input type="text" id="nilai" value="" autocomplete="off" required/>
+            <label for="nilai">Masukkan Nilai</label>
+            <select name="kurs" id="kurs">
+                <option value="" selected>Pilih Kurs</option>
+                <option value="9.915">Dollar US</option>
+                <option value="13.472">Dollar Singapore</option>
+                <option value="874">Ringgit Malaysia</option>
+                <option value="120">Yen Jepang</option>
+                <option value="15.888">Euro</option>
+                <option value="3.592">Riyal Arab Saudi</option>
+            </select>
+            <input type="text" id="rupiah" value="Nilai Rupiah" disabled/>
+            
+            <button type="button" id="konversi">Konversi</button>
+        </form>
+        <img src="img/finance.svg" alt="">
+    </div>
+    <script src="script.js"></script>
+   
+</body>
+</html>
